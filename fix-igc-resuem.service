@@ -1,0 +1,12 @@
+[Unit]
+Description=Reload igc network driver on resume
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/modprobe -r igc
+ExecStartPost=/sbin/modprobe igc
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
