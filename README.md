@@ -1,5 +1,5 @@
 
-# igc-resume-fix
+# intel-igc-fix-ubuntu-debian
 
 Fixes Intel `igc` network adapter not coming back after suspend / resume on Ubuntu.
 
